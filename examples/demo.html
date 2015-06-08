@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-	<title>Angular-Sticky Demo v1.7.9</title>
+	<title>Angular-Multiple-Sticky Demo v1.7.9</title>
 
 	<style>
 		body {
@@ -24,13 +24,23 @@
 			background-color: rgba(0, 0, 0, 0.1);
 			margin:0 50px 50px 0;
 		}
+
+		.violet
+		{
+			background-color: violet!important;
+			height: 100px!important;
+						webkit-transition: all .2s ease-in-out;
+		   -moz-transition: all .2s ease-in-out;
+		   -o-transition: all .2s ease-in-out;
+		   transition: all .2s ease-in-out;
+		}
 	</style>
 </head>
 
 <body ng-app="demo" style="min-height: 2000px;">
 
 	<div class="container">
-		<div class="sticky-box" style="background-color: blue; margin: 50px;" media-query="min-width: 768px" sticky confine="true">
+		<div class="sticky-box" compact-On-Count="2"  compact-Class="violet"  style="background-color: blue; margin: 50px;" media-query="min-width: 768px" sticky confine="true">
 			Style:<br>
 			margin: 50px;<br>
 			<br>
@@ -41,7 +51,7 @@
 	</div>
 
 	<div class="container">
-		<div class="sticky-box" style="background-color: blue;" sticky offset="25" confine="true">
+		<div class="sticky-box" compact-On-Count="1" compact-Class="violet" style="background-color: blue;" sticky offset="25" confine="true">
 			Options:<br>
 			offset="25"
 			confine="true"
@@ -78,7 +88,7 @@
 
 	<aside role="scripts">
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
-		<script src="../lib/sticky.js"></script>
+		<script src="../lib/multipleSticky.js"></script>
 		<script>angular.module('demo', ['sticky']);</script>
 	</aside>
 
