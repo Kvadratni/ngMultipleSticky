@@ -54,14 +54,14 @@ Cheers.
 ###Update (WIP)
 
 To make your sticky elements sticky one after another use:
-<div sticky ensure-Offset="true"> Will offset with previous elements heights </div>
+    <div sticky ensure-Offset="true"> Will offset with previous elements heights </div>
 
 > NOTE: Still works bad with anchor bottom
 
 
 If you want to customize the style while the element is sticky and amount of sticky elements is more than some value use:
-<div sticky  compact-On-Count="1" compact-Class="CompactClass">I will change size (initially become smaller) when there are more then 1 elements sticky</div>
+    <div sticky  compact-On-Count="1" compact-Class="CompactClass">I will change size (initially become smaller) when there are more then 1 elements sticky</div>
 
 
 If you want to customize the style while the element is sticky and you scrolled some particullar amount use:
-<div sticky  compact-Offset="800px" compact-Class="CompactClass">I will change size (initially become smaller) when page scrolled more then 800px </div>
+    <div sticky  compact-Offset="800px" compact-Class="CompactClass">I will change size (initially become smaller) when page scrolled more then 800px </div>
